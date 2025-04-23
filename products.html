@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Awaiken" />
+    <!-- Page Title -->
+    <title>SAGUNA GROUP</title>
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" href="images/favicon.png"/>
+   <link rel="shortcut icon" href="images/favicon.png" type="img/png" />
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+    <style>
+        table {
+             width: 300px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th {
+           
+            color: #555;
+            padding: 15px;
+            font-size: 18px;
+        }
+        td {
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+        tr:hover td {
+            background-color: #e0f7fa;
+            color: #000;
+        }
+        table, th, td {
+          border: 1px solid #959595;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="fixnavbar">
+    <!-- Topbar Section Start -->
+    <div class="topbar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="site-logo">
+              <a href="index.html">
+                <img src="images/Saguna-logo.png" alt="Logo" height="130px;" />
+              </a>
+            </div>
+            <!-- Logo End -->
+          </div>
+
+          <div class="col-lg-9 col-md-12">
+            <!-- Topbar Contact Information Start -->
+            <div class="topbar-contact-info">
+              <ul style="display: flex; align-items: center; gap: 20px; list-style: none; padding: 0; margin: 0;">
+                <!-- Phone -->
+                <li style="display: flex; align-items: center; gap: 10px;">
+                  <div class="icon-box">
+                    <img src="images/icon-phone.svg" alt="Phone Icon" style="width: 24px; height: 24px;" />
+                  </div>
+                  <a href="tel:9922557733" style="text-decoration: none; color: inherit; font-size: 16px;">
+                    +91-9922557733
+                  </a>
+                </li>
+          
+                <!-- Emails -->
+                <li style="display: flex; align-items: center; gap: 10px;">
+                  <div class="icon-box">
+                    <img src="images/icon-mail.svg" alt="Email Icon" style="width: 24px; height: 24px;" />
+                  </div>
+                  <div style="display: flex; flex-direction: column;">
+                    <a href="mailto:info@sagunagroup.com" style="text-decoration: none; color: inherit; font-size: 16px;">
+                      info@sagunagroup.com
+                    </a>
+                    <a href="mailto:support@sagunagroup.com" style="text-decoration: none; color: inherit; font-size: 16px;">
+                      support@sagunagroup.com
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Topbar Contact Information End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar Section End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="index.html">
+              <img src="images/Saguna-logo.png" alt="Logo" height="70px" />
+            </a>
+            <!-- Logo End -->
+
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="associates.html">Associates</a>
+                  </li>
+                      <!-- Products Dropdown Start -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle act"
+                    href="./products.html"
+                    id="productsDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    onclick="navigateToProducts(event)"
+                  >
+                    Products
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                    <li><a class="dropdown-item" href="./products.html">Polyethylene</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Polypropylene</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Polyvinyl Chloride (PVC)</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Polyethylene Terephthalate (PET)</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Engineering Thermo Plastic</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Calcium Carbonate</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Titanium Dioxide (Rutile & Anatase)</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Glycerol Monostearate Specification (GMS)</a></li>
+                    <li><a class="dropdown-item" href="./products.html">Masters Batches</a></li>
+                  </ul>
+                </li>
+                <!-- Products Dropdown End -->
+                  <li class="nav-item"><a class="nav-link" href="Event.html">Event</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Header Social Box Start -->
+              <div class="header-social-box d-inline-flex">
+                <!-- Header Social Links Start -->
+                <div class="header-social-links">
+                  <ul>
+                    <li class="whatsapp">
+                      <a href="https://wa.me/9922557733?text=Hello,%20I%20would%20like%20to%20contact%20you!"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li class="linkedin">
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="instagram">
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="facebook">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Header Social Links End -->
+              </div>
+              <!-- Header Social Box End -->
+            </div>
+            <!-- Main Menu End -->
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    </div>
+    <!-- Header End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header parallaxie" style="background-image: url(images/about.png);">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <!-- Page Header Box Start -->
+            <div class="page-header-box">
+              <!-- <nav class="wow fadeInUp">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Our Products
+                  </li>
+                </ol>
+              </nav> -->
+            </div>
+            <!-- Page Header Box End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Page Team Start -->
+    <div class="page-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/POLYETHYLENE new.jpg" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">POLYETHYLENE</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >HDPE</td>
+                  </tr>
+                  <tr>
+                    <td>LLDPE</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>LDPE</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>MDPE</td>
+                    
+                  </tr>
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+
+           <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/polyethylene-raw-materials.png" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">POLYPROPYLENE</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >CO-POLYMERS</td>
+                  </tr>
+                  <tr>
+                    <td>HOMOPOLYMERS</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>RANDOM CO-POLYMERS</td>
+                    
+                  </tr>
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/POLYVINYL CHLORIDE (PVC) new.png" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">POLYVINYL CHLORIDE (PVC)</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >K67</td>
+                  </tr>
+                  <tr>
+                    <td>K57</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>K70</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>PASTE GRADE ( 120 & 124)</td>
+                    
+                  </tr>
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+           <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/POLYETHYLENE TEREPHTHALATE (PET) new.jpg" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">POLYETHYLENE TEREPHTHALATE (PET)</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >Bottle grade</td>
+                  </tr>
+                  <tr>
+                    <td>Fibre Grade</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Film/sheet Grade</td>
+                    
+                  </tr>
+              
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+             <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/engineering-thermoplastic-raw-materials.png" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">ENGINEERING THERMO PLASTIC</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >ABS, ASA, GPPS, HIPS</td>
+                  </tr>
+                  <tr>
+                    <td>Nylon 6, Nylon 66</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>PBT, Polycarbonates, Polyacetal</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>PMMA, SBC, EVA</td>
+                    
+                  </tr>
+              
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+       
+           <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/Calcium-Carbonate-update.jpg" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">CALCIUM CARBONATE</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >Indian & Imported</td>
+                  </tr>
+                  <tr>
+                    <td>Coated & uncoated</td>
+                    
+                  </tr>
+              
+              
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+            <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/TITANIUM DIOXID (RUTILE & ANATASE) new.jpg" alt="">
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">TITANIUM DIOXID (RUTILE & ANATASE)</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >Decorative & Industrial Paints</td>
+                  </tr>
+                  <tr>
+                    <td>Masterbatch</td>
+                    
+                  </tr>
+                    <tr>
+                    <td>PVC Pipes</td>  
+                  </tr>
+                 </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/Glycerol-Monostearate-GMS.jpg" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#"> Glycerol
+                  Monostearate
+                  Specification
+                  (GMS)</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td > For EPE FOAM</td>
+                  </tr>
+  
+                 </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <!-- Team Member Item Start -->
+            <div class="team-member-item wow fadeInUp">
+              <!-- Team Image Start -->
+              <div class="team-image">
+                <a href="#">
+                  <figure class="image-anime">
+                    <img src="images/masterbatchupdate.jpg" alt="" />
+                  </figure>
+                </a>
+
+               
+              </div>
+              <!-- Team Image End -->
+
+              <!-- Team Content Start -->
+              <div class="team-content text-center">
+                <h3><a href="#">MASTERS BATCHES</a></h3>
+                <table class="text-center">
+                  <tr>
+                    
+                    <td >Black Masterbatch</td>
+                  </tr>
+                  <tr>
+                    <td>Colour Masterbatch</td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Combi-Batch</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>PPA</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>White Masterbatch</td>
+                    
+                  </tr>
+                   <tr>
+                    <td>Performance Additives</td>
+                    
+                  </tr>
+              
+             
+                </table>
+              </div>
+              <!-- Team Content End -->
+            </div>
+            <!-- Team Member Item End -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Page Team End -->
+         <a 
+        href="https://wa.me/9922557733?text=Hello,%20I%20would%20like%20to%20contact%20you!" 
+        target="_blank" 
+        class="whatsapp-btn"
+        title="Chat with us on WhatsApp" >
+        <!-- Phone Icon --><img src="images/whats-logo.png" />
+    </a>
+ 
+   <!-- Footer Start -->
+   <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <!-- About Footer Start -->
+          <div class="about-footer">
+            <!-- Footer Logo Start -->
+             <center>
+            <div class="footer-logo text-center">
+              <img src="images/Saguna-logo-1.png" height="120px" alt="" />
+            </div>
+          </center>
+            <!-- Footer Logo End -->
+
+            <!-- About Footer Content Start -->
+            <div class="about-footer-content">
+              <p style="text-align: justify;">
+                SAGUNA GROUP is a Pune based leading, strong & trusted in the
+                field of trading of various products from polymer industry,
+                irrigation industry, & water pump sector.
+              </p>
+            </div>
+            <!-- About Footer Content End -->
+
+            <!-- Footer Social Link Start -->
+
+          </div>
+          <!-- About Footer End -->
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <!-- Contact Information Start -->
+          <div class="contact-information">
+            <!-- Contact Info Box Start -->
+            <div class="contact-info-box footer-links">
+              <!-- Page Contact Item Start -->
+              <h3 class="ftext">Address</h3>
+              <div class="contact-info-item " >
+                <div class="icon-box">
+                  <img src="images/icon-location.svg" alt="" />
+                </div>
+                <div class="contact-info-content">
+
+                  <p class="ftext">
+                    Sr No- 136/4,
+                    Opposite Hotel LAXMI VEG,
+                    Bhadale wasti,
+                    Pune-Saswad Road,
+                    Uruli Devachi, PUNE- 412308
+                  </p>
+                </div>
+                <div class="icon-box">
+                  <img src="images/icon-phone.svg" alt="" />
+                </div>
+                <div class="contact-info-content">
+
+                  <p class="ftext">+91 9922557733 / +91 8888114466</p>
+                </div>
+                <div class="icon-box">
+                  <img src="images/icon-mail.svg" alt="" />
+                </div>
+                <div class="contact-info-content">
+
+                  <p class="ftext">sagunasalescorp@gmail.com</p>
+                </div>
+              </div>
+              <!-- Page Contact Item End -->
+
+            </div>
+          </div>
+          <!-- Contact Information End -->
+        </div>
+        <!-- <div class="col-lg-2 col-md-2 "> -->
+        <!-- Footer Links Start -->
+        <!-- <div class="footer-links">
+              <h3>links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="associates.html">Associates</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div> -->
+        <!-- Footer Links End -->
+        <!-- </div> -->
+
+        <div class="col-lg-4 col-md-3 ">
+          <!-- Footer Links Start -->
+          <div class="footer-links">
+            <h3>Map</h3>
+            <div class="mapp" style="margin: 5px; border: 10px solid white; border-radius: 7px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7569.346989255084!2d73.967867!3d18.453128!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e974a35dabf5%3A0x1f4126dcfe44c9a9!2sSaguna%20Group!5e0!3m2!1sen!2sin!4v1734065002224!5m2!1sen!2sin"
+                allowfullscreen="" height="180px" width="100%" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <!-- Footer Links End -->
+        </div>
+
+
+      </div>
+
+      <!-- Footer Copyright Section Start -->
+      <div class="footer-copyright">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <!-- Footer Copyright Start -->
+            <div class="footer-copyright-text">
+              <p>Copyright © Saguna Group. All Rights Reserved.
+                Designed By <a href="http://www.netcom-india.com/" style="color:white">&nbsp;Netcom Business Solutions
+                  Pvt. Ltd.</a>
+              </p>
+            </div>
+            <!-- Footer Copyright End -->
+          </div>
+        </div>
+      </div>
+      <!-- Footer Copyright Section End -->
+    </div>
+  </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+  </body>
+</html>
